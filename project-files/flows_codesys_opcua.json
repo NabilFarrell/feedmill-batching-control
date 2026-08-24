@@ -1,0 +1,1826 @@
+[
+    {
+        "id": "47918737585505b7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cf4ead20f394e3f6",
+        "type": "OpcUa-Endpoint",
+        "name": "2152",
+        "endpoint": "opc.tcp://192.168.1.10:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "0bbe45a2510fc488",
+        "type": "ui_tab",
+        "name": "Feedmill Batching Control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "44473f7f2b67b680",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Feedmill Batching Control",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a929e2e82efc5277",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "0bbe45a2510fc488",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "514325691268a48f",
+        "type": "OpcUa-Endpoint",
+        "name": "PLC",
+        "endpoint": "opc.tcp://192.168.1.10:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "4a8c48bb73405d84",
+        "type": "OpcUa-Endpoint",
+        "name": "codesys",
+        "endpoint": "opc.tcp://ASUSTUFA15-NABIL:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "5a51765a4eae2731",
+        "type": "ui_group",
+        "name": "Process",
+        "tab": "0bbe45a2510fc488",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cfc928fbcc37d91f",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "0bbe45a2510fc488",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cf9db3432705c00a",
+        "type": "ui_group",
+        "name": "Alarm",
+        "tab": "0bbe45a2510fc488",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d0f48b8f85b64b5",
+        "type": "ui_spacer",
+        "z": "47918737585505b7",
+        "name": "spacer",
+        "group": "a929e2e82efc5277",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "08a0bfa82e42a664",
+        "type": "ui_spacer",
+        "z": "47918737585505b7",
+        "name": "spacer",
+        "group": "cfc928fbcc37d91f",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "40429e20969d73e5",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "6fa324e8a2a3b553",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "836ffbf9631eb930",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "40429e20969d73e5",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "6fa324e8a2a3b553",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e14bf4c9967a1c4f",
+        "type": "ui_group",
+        "name": "Trend",
+        "tab": "0bbe45a2510fc488",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a16fa9142bc7230e",
+        "type": "ui_group",
+        "name": "History",
+        "tab": "0bbe45a2510fc488",
+        "order": 6,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7875b4a2dfd14701",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "836ffbf9631eb930",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "dcd1c26282a80a0e",
+        "type": "ui-group",
+        "name": "Feedmill - Datalogging",
+        "page": "836ffbf9631eb930",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5c65f5395f59a2e0",
+        "type": "ui-group",
+        "name": "Trends",
+        "page": "836ffbf9631eb930",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ef7632b3ef0a5886",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Alarm_Active",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Alarm Active",
+        "x": 910,
+        "y": 540,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "4a163c144630d895",
+        "type": "OpcUa-Client",
+        "z": "47918737585505b7",
+        "endpoint": "4a8c48bb73405d84",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "500",
+        "timeUnit": "ms",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "OpcUa Client - Subscribe",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 1190,
+        "y": 700,
+        "wires": [
+            [
+                "3e618d6171658e5a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fc454c28bb489e17",
+        "type": "inject",
+        "z": "47918737585505b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 630,
+        "y": 740,
+        "wires": [
+            [
+                "27f5ec8cd7fca3f6",
+                "90e9ecc57d6ffd22",
+                "ef7632b3ef0a5886",
+                "c2be36355ba48f77",
+                "5f7d5d1806eb1671",
+                "bd8b3387a8155717",
+                "a0c48e5fe80c8ded",
+                "5d67136941d975fd",
+                "6afdfdd92cb6d95f",
+                "06e2fbee566f0187",
+                "50ddc2a2f5cf3b56",
+                "8ac319dd644d98f9",
+                "f66b9b9c62c63eed"
+            ]
+        ]
+    },
+    {
+        "id": "c2be36355ba48f77",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Alarm_EmptyBin",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Alarm Empty Bin",
+        "x": 890,
+        "y": 580,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "d505b4f86a097e01",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Alarm_Reset",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Alarm Reset",
+        "x": 1287.929973602295,
+        "y": 1349.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "5f7d5d1806eb1671",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Alarm_Underweight",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Alarm Underweight",
+        "x": 890,
+        "y": 620,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "bd8b3387a8155717",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Batch_Counter",
+        "datatype": "Int16",
+        "value": "",
+        "name": "Batch Counter",
+        "x": 900,
+        "y": 680,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "dfe629941ca69882",
+        "type": "OpcUa-Client",
+        "z": "47918737585505b7",
+        "endpoint": "4a8c48bb73405d84",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "OpcUa Client - Write",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 1580,
+        "y": 1260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a0c48e5fe80c8ded",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Batch_State",
+        "datatype": "Int16",
+        "value": "",
+        "name": "Batch State",
+        "x": 910,
+        "y": 720,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "5d67136941d975fd",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.BinLevel_1",
+        "datatype": "Float",
+        "value": "",
+        "name": "Bin Level 1",
+        "x": 910,
+        "y": 780,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "6afdfdd92cb6d95f",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.BinLevel_2",
+        "datatype": "Float",
+        "value": "",
+        "name": "Bin Level 2",
+        "x": 910,
+        "y": 820,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "06e2fbee566f0187",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.BinLevel_3",
+        "datatype": "Float",
+        "value": "",
+        "name": "Bin Level 3",
+        "x": 910,
+        "y": 860,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "50ddc2a2f5cf3b56",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.BinLevel_4",
+        "datatype": "Float",
+        "value": "",
+        "name": "Bin Level 4",
+        "x": 910,
+        "y": 900,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "8ac319dd644d98f9",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Current_Target",
+        "datatype": "Float",
+        "value": "",
+        "name": "Current Target",
+        "x": 900,
+        "y": 960,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "2f63e2fced83e642",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E_Stop",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Emergency Stop",
+        "x": 1307.929973602295,
+        "y": 1249.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "ee7406ee47c709e6",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Recipe_Select",
+        "datatype": "Int16",
+        "value": "",
+        "name": "Select Recipe",
+        "x": 1297.929973602295,
+        "y": 1449.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "6124587f1895e88d",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Start",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Start Button",
+        "x": 1287.929973602295,
+        "y": 1149.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "32c6378c0e95bbcc",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Stop",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Stop Button",
+        "x": 1290,
+        "y": 1200,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "dfc26fa042a7e5a6",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Target_Batches",
+        "datatype": "Int16",
+        "value": "",
+        "name": "Target Batches",
+        "x": 1297.929973602295,
+        "y": 1509.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "90e9ecc57d6ffd22",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Total_Weight",
+        "datatype": "Float",
+        "value": "",
+        "name": "Total Weight",
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "27f5ec8cd7fca3f6",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Weight_LoadCell",
+        "datatype": "Float",
+        "value": "",
+        "name": "Loadcell Weight",
+        "x": 900,
+        "y": 440,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "3e618d6171658e5a",
+        "type": "switch",
+        "z": "47918737585505b7",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Weight_LoadCell",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Total_Weight",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Batch_State",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Batch_Counter",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Alarm_Active",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "BinLevel_1",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "BinLevel_2",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "BinLevel_3",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "BinLevel_4",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Current_Target",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Alarm_EmptyBin",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Alarm_Underweight",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "SAFETY_Lock",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 13,
+        "x": 1430,
+        "y": 700,
+        "wires": [
+            [
+                "57818bedddcf3c34"
+            ],
+            [
+                "71d7ce428076d879"
+            ],
+            [
+                "66e5c4e77ae3f0b4"
+            ],
+            [
+                "4a88612efa0fc8ba"
+            ],
+            [
+                "1aaa506c9c674ea3"
+            ],
+            [
+                "c835712b0b41c053"
+            ],
+            [
+                "6760c37e9d81bebd"
+            ],
+            [
+                "6a11315de5336432"
+            ],
+            [
+                "778b0b900222a54d"
+            ],
+            [],
+            [
+                "57f0dc40d4b04520"
+            ],
+            [
+                "1c84b58ac76856b9"
+            ],
+            [
+                "2195fc6b0d438c47"
+            ]
+        ]
+    },
+    {
+        "id": "57818bedddcf3c34",
+        "type": "ui_gauge",
+        "z": "47918737585505b7",
+        "name": "Gauge - Weight Loadcell",
+        "group": "5a51765a4eae2731",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Loadcell Weight",
+        "label": "kg",
+        "format": "{{value}} kg",
+        "min": 0,
+        "max": "600",
+        "colors": [
+            "#a8eeff",
+            "#39d3f9",
+            "#0083a3"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "71d7ce428076d879",
+        "type": "ui_text",
+        "z": "47918737585505b7",
+        "group": "a929e2e82efc5277",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "text - total weight",
+        "label": "Accumulated Total Weight",
+        "format": "{{msg.payload}} kg",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1732.070026397705,
+        "y": 410.58802318573,
+        "wires": []
+    },
+    {
+        "id": "66e5c4e77ae3f0b4",
+        "type": "function",
+        "z": "47918737585505b7",
+        "name": "Naming Function",
+        "func": "// Batch_State number → readable name + color\nconst names = [\"IDLE\", \"DOSING\", \"MIXING\", \"DISCHARGING\", \"COMPLETE\", \"FAULT\"];\n\n// Guard: only accept a real number 0-5\nconst state = Number(msg.payload);\nif (Number.isInteger(state) && state >= 0 && state < names.length) {\n    msg.payload = names[state];\n    msg.color = state === 5 ? \"red\" : (state === 0 ? \"grey\" : \"green\");\n} else {\n    msg.payload = \"?\";\n    msg.color = \"grey\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1728.7766571044922,
+        "y": 456.4162292480469,
+        "wires": [
+            [
+                "afd230ddfe4e40f3"
+            ]
+        ]
+    },
+    {
+        "id": "afd230ddfe4e40f3",
+        "type": "ui_text",
+        "z": "47918737585505b7",
+        "group": "a929e2e82efc5277",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Batch State",
+        "label": "Batch State",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1912.070026397705,
+        "y": 470.58802318573,
+        "wires": []
+    },
+    {
+        "id": "4a88612efa0fc8ba",
+        "type": "ui_text",
+        "z": "47918737585505b7",
+        "group": "a929e2e82efc5277",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Batch Counter",
+        "label": "Batch Counter",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1718.7766571044922,
+        "y": 496.4162292480469,
+        "wires": []
+    },
+    {
+        "id": "1aaa506c9c674ea3",
+        "type": "ui_led",
+        "z": "47918737585505b7",
+        "order": 1,
+        "group": "cf9db3432705c00a",
+        "width": 0,
+        "height": 0,
+        "label": "ERROR",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Alarm Active",
+        "x": 1712.070026397705,
+        "y": 550.58802318573,
+        "wires": []
+    },
+    {
+        "id": "57f0dc40d4b04520",
+        "type": "ui_led",
+        "z": "47918737585505b7",
+        "order": 2,
+        "group": "cf9db3432705c00a",
+        "width": 0,
+        "height": 0,
+        "label": "Empty Bin",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Empty Error Led",
+        "x": 1722.070026397705,
+        "y": 590.58802318573,
+        "wires": []
+    },
+    {
+        "id": "1c84b58ac76856b9",
+        "type": "ui_led",
+        "z": "47918737585505b7",
+        "order": 3,
+        "group": "cf9db3432705c00a",
+        "width": 0,
+        "height": 0,
+        "label": "Underweight",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Underweight Alarm Led",
+        "x": 1752.070026397705,
+        "y": 630.58802318573,
+        "wires": []
+    },
+    {
+        "id": "5923e367eba0c276",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "Start Button",
+        "group": "cfc928fbcc37d91f",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 947.9299736022949,
+        "y": 1149.41197681427,
+        "wires": [
+            [
+                "421e683ca9096320"
+            ]
+        ]
+    },
+    {
+        "id": "de648b5b3e4f476e",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "Stop Button",
+        "group": "cfc928fbcc37d91f",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 950,
+        "y": 1200,
+        "wires": [
+            [
+                "dec91ac1452bf31f"
+            ]
+        ]
+    },
+    {
+        "id": "7c1fce3d23e9bf39",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "Emergency Stop",
+        "group": "cfc928fbcc37d91f",
+        "order": 10,
+        "width": 7,
+        "height": 2,
+        "passthru": false,
+        "label": "Emergency Stop",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 927.9299736022949,
+        "y": 1249.41197681427,
+        "wires": [
+            [
+                "e3ae0f789285fa5c"
+            ]
+        ]
+    },
+    {
+        "id": "ed26b1c90cffe423",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "Alarm Reset",
+        "group": "cfc928fbcc37d91f",
+        "order": 9,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Reset Alarm & Status",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 947.9299736022949,
+        "y": 1349.41197681427,
+        "wires": [
+            [
+                "4ef4459558e516a5"
+            ]
+        ]
+    },
+    {
+        "id": "421e683ca9096320",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1117.929973602295,
+        "y": 1149.41197681427,
+        "wires": [
+            [
+                "6124587f1895e88d"
+            ]
+        ]
+    },
+    {
+        "id": "dec91ac1452bf31f",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1120,
+        "y": 1200,
+        "wires": [
+            [
+                "32c6378c0e95bbcc"
+            ]
+        ]
+    },
+    {
+        "id": "4ef4459558e516a5",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1117.929973602295,
+        "y": 1349.41197681427,
+        "wires": [
+            [
+                "d505b4f86a097e01"
+            ]
+        ]
+    },
+    {
+        "id": "6c97d7bdb23d77a9",
+        "type": "ui_dropdown",
+        "z": "47918737585505b7",
+        "name": "",
+        "label": "Select Recipe",
+        "tooltip": "",
+        "place": "Recipe",
+        "group": "cfc928fbcc37d91f",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Recipe 1  |  Poultry",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Recipe 2  |  Pig Growler",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "Recipe 3  |  Cattle",
+                "value": 3,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1117.929973602295,
+        "y": 1449.41197681427,
+        "wires": [
+            [
+                "ee7406ee47c709e6",
+                "4bcd1d9b7481f835"
+            ]
+        ]
+    },
+    {
+        "id": "f2c7ac8f5f69e8b5",
+        "type": "ui_numeric",
+        "z": "47918737585505b7",
+        "name": "",
+        "label": "Target Batch",
+        "tooltip": "",
+        "group": "cfc928fbcc37d91f",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "99",
+        "step": 1,
+        "className": "",
+        "x": 1127.929973602295,
+        "y": 1509.41197681427,
+        "wires": [
+            [
+                "dfc26fa042a7e5a6"
+            ]
+        ]
+    },
+    {
+        "id": "697aefe395255d03",
+        "type": "ui_switch",
+        "z": "47918737585505b7",
+        "name": "Auto Restart",
+        "label": "Auto Restart Batch",
+        "tooltip": "",
+        "group": "cfc928fbcc37d91f",
+        "order": 3,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1127.929973602295,
+        "y": 1389.41197681427,
+        "wires": [
+            [
+                "e4e38722d2b471b2"
+            ]
+        ]
+    },
+    {
+        "id": "e4e38722d2b471b2",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Auto_Restart",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Auto Restart Batch",
+        "x": 1307.929973602295,
+        "y": 1389.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "aab3537fa0c302ab",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E_Stop_Release",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Release Safety",
+        "x": 1297.929973602295,
+        "y": 1289.41197681427,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "7ad532482e1208b5",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "Release Emergency Stop",
+        "group": "cfc928fbcc37d91f",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Release Safety",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 907.9299736022949,
+        "y": 1289.41197681427,
+        "wires": [
+            [
+                "b847255bb8985b6a"
+            ]
+        ]
+    },
+    {
+        "id": "f66b9b9c62c63eed",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.SAFETY_Lock",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Safety Lock",
+        "x": 887.9299736022949,
+        "y": 1029.41197681427,
+        "wires": [
+            [
+                "4a163c144630d895"
+            ]
+        ]
+    },
+    {
+        "id": "2195fc6b0d438c47",
+        "type": "ui_led",
+        "z": "47918737585505b7",
+        "order": 6,
+        "group": "a929e2e82efc5277",
+        "width": 0,
+        "height": 0,
+        "label": "Safety Lock",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Safety Lock",
+        "x": 1710,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b847255bb8985b6a",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1117.929973602295,
+        "y": 1289.41197681427,
+        "wires": [
+            [
+                "aab3537fa0c302ab"
+            ]
+        ]
+    },
+    {
+        "id": "e3ae0f789285fa5c",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1117.929973602295,
+        "y": 1249.41197681427,
+        "wires": [
+            [
+                "2f63e2fced83e642"
+            ]
+        ]
+    },
+    {
+        "id": "af03b95d30413c1f",
+        "type": "OpcUa-Item",
+        "z": "47918737585505b7",
+        "item": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Manual_Discharge",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Manual Discharge",
+        "x": 1310,
+        "y": 1560,
+        "wires": [
+            [
+                "dfe629941ca69882"
+            ]
+        ]
+    },
+    {
+        "id": "05cdc1d4a913d82f",
+        "type": "ui_button",
+        "z": "47918737585505b7",
+        "name": "",
+        "group": "cfc928fbcc37d91f",
+        "order": 7,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Manual Discharge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 1560,
+        "wires": [
+            [
+                "b103060d4506a7aa"
+            ]
+        ]
+    },
+    {
+        "id": "b103060d4506a7aa",
+        "type": "trigger",
+        "z": "47918737585505b7",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1120,
+        "y": 1560,
+        "wires": [
+            [
+                "af03b95d30413c1f"
+            ]
+        ]
+    },
+    {
+        "id": "c835712b0b41c053",
+        "type": "ui_artlessgauge",
+        "z": "47918737585505b7",
+        "group": "5a51765a4eae2731",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Bin 1 Gauge",
+        "icon": "",
+        "label": "Bin 1 Level  |  Corn",
+        "unit": "kg",
+        "layout": "linear",
+        "decimals": 0,
+        "differential": false,
+        "minmax": false,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff9900",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 5000,
+                "col": "#ff9900",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": 3,
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 1712.070026397705,
+        "y": 690.58802318573,
+        "wires": []
+    },
+    {
+        "id": "6760c37e9d81bebd",
+        "type": "ui_artlessgauge",
+        "z": "47918737585505b7",
+        "group": "5a51765a4eae2731",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Bin 2 Gauge",
+        "icon": "",
+        "label": "Bin 2 Level  |  Soybean Meal",
+        "unit": "kg",
+        "layout": "linear",
+        "decimals": 0,
+        "differential": false,
+        "minmax": false,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#fff700",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 5000,
+                "col": "#fff700",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": 3,
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 1712.070026397705,
+        "y": 730.58802318573,
+        "wires": []
+    },
+    {
+        "id": "6a11315de5336432",
+        "type": "ui_artlessgauge",
+        "z": "47918737585505b7",
+        "group": "5a51765a4eae2731",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Bin 3 Gauge",
+        "icon": "",
+        "label": "Bin 3 Level  |  Wheat Bran",
+        "unit": "kg",
+        "layout": "linear",
+        "decimals": 0,
+        "differential": false,
+        "minmax": false,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff4d00",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 5000,
+                "col": "#ff4d00",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": 3,
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 1712.070026397705,
+        "y": 770.58802318573,
+        "wires": []
+    },
+    {
+        "id": "778b0b900222a54d",
+        "type": "ui_artlessgauge",
+        "z": "47918737585505b7",
+        "group": "5a51765a4eae2731",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Bin 4 Gauge",
+        "icon": "",
+        "label": "Bin 4 Level  |  Limestone",
+        "unit": "kg",
+        "layout": "linear",
+        "decimals": 0,
+        "differential": false,
+        "minmax": false,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#b30000",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 5000,
+                "col": "#b30000",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": 3,
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 1712.070026397705,
+        "y": 810.58802318573,
+        "wires": []
+    },
+    {
+        "id": "4c501fb8a529b602",
+        "type": "ui_text",
+        "z": "47918737585505b7",
+        "group": "a929e2e82efc5277",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Recipe Show",
+        "label": "Active Recipe",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1670,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "4bcd1d9b7481f835",
+        "type": "function",
+        "z": "47918737585505b7",
+        "name": "Naming",
+        "func": "// Batch_State number → readable name + color\nconst names = [\"-\",\"Recipe 1 | Poultry\", \"Recipe 2 | Pig Growler\"\n, \"Recipe 3 | Cattle\"];\n\n// Guard: only accept a real number 0-5\nconst state = Number(msg.payload);\nif (Number.isInteger(state) && state >= 0 && state < names.length) {\n    msg.payload = names[state];\n    msg.color = state === 5 ? \"red\" : (state === 0 ? \"grey\" : \"green\");\n} else {\n    msg.payload = \"?\";\n    msg.color = \"grey\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1440,
+        "wires": [
+            [
+                "4c501fb8a529b602"
+            ]
+        ]
+    },
+    {
+        "id": "c56168f5f523e9b4",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-opcua": "0.2.354",
+            "node-red-dashboard": "3.6.6",
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-contrib-ui-led": "0.4.11",
+            "node-red-contrib-ui-artless-gauge": "0.3.12"
+        }
+    }
+]

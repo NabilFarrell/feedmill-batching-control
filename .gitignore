@@ -1,0 +1,17 @@
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Large binary files (optional - uncomment if you want to exclude videos from git)
+# video/*.mp4
+
+# CODESYS internal files
+*.compiled
+*.zipbackup
+*.restore
