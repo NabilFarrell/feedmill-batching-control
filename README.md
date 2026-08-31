@@ -91,7 +91,7 @@ A complete batch processing system for animal feed production. The system contro
 
 ## Author
 
-Muhammad Nabil Farrell — Industrial Automation Engineer
+Muhammad Nabil Farrell — Electrical Engineering Fresh Graduate
 
 - GitHub: [github.com/NabilFarrell](https://github.com/NabilFarrell)
 - LinkedIn: [linkedin.com/in/nabil-farrell](https://www.linkedin.com/in/nabil-farrell/)
