@@ -2,16 +2,24 @@
 
 Screen recordings of the feedmill batching system in operation.
 
-## Videos
+## Current — Ignition Perspective HMI
+
+| File | Duration | What it shows |
+|------|----------|---------------|
+| `feedmill-batching-demo.mp4` | 154s | Full demo of the Ignition HMI: every batch state, emergency stop, and fault/alarm handling |
+
+- 1920×1080, H.264 + AAC
+- Recorded from a runtime client session
+
+## Archived — v1 Node-RED HMI layer (`v1-node-red/`)
 
 | File | Duration | What it shows |
 |------|----------|---------------|
 | `Idle-Control-Start-Emergency-Release Emergency.mp4` | 158s | Full batch cycle (5 batches) + Emergency Stop trigger and release + COMPLETE state |
 | `Idle-Control-Start-Empty Bin-Release Error Status.mp4` | 92s | Full batch cycle (3 batches) + Empty Bin alarm trigger and reset |
 
-## What to look for
+### Emergency Stop demo (v1)
 
-### Video 1: Emergency Stop Demo
 - 0:00 — IDLE state, all bins at 5000 kg
 - 0:15 — Recipe changed to Poultry, Target Batch set to 10
 - 0:30 — First batch in DISCHARGING phase
@@ -20,7 +28,8 @@ Screen recordings of the feedmill batching system in operation.
 - 2:00 — System recovered, batch 4 in MIXING
 - 2:30 — Target Batch reduced to 5, COMPLETE state reached
 
-### Video 2: Alarm Demo
+### Alarm demo (v1)
+
 - 0:00 — IDLE state, bins pre-loaded with lower levels
 - 0:15 — START pressed, DOSING begins
 - 0:30 — Batch 1 COMPLETE
@@ -30,4 +39,4 @@ Screen recordings of the feedmill batching system in operation.
 
 ## Playback
 
-These are MP4 files. Play with any media player (VLC, Windows Media Player, browser).
+MP4 files — play with any media player (VLC, Windows Media Player, browser).

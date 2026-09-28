@@ -1,17 +1,30 @@
-# OS files
-Thumbs.db
-Desktop.ini
+# CODESYS build artifacts and machine-specific settings
+# NOTE: `*.opt` contains the Windows username and hostname. Never commit.
+*.opt
+*.compileinfo
+*.bootinfo
+*.bootinfo_guids
+*.precompilecache
+*.cache
+*.~u
+*.lck
+*.backup
+*.bak
+*~u
+
+# Ignition
+*.stackstate
+*.scsnapshot
+*.log
+
+# Node-RED (v1 layer, kept in repo — ignore only local runtime state)
+node_modules/
+.nodered/
+
+# OS / editor
 .DS_Store
-
-# Editor files
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
 *.swp
-*.swo
-*~
-
-# Large binary files (optional - uncomment if you want to exclude videos from git)
-# video/*.mp4
-
-# CODESYS internal files
-*.compiled
-*.zipbackup
-*.restore
